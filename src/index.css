@@ -1,16 +1,12 @@
 :root {
   --primary-200: #A7C8AB;
   --primary-300: #519259;
+  --primary-350: #349741;
   --primary-400: #278233;
+  --primary-700: #064635;
 
   --accent-200: #F4EEA9;
   --accent-400: #F0BB62;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 body {

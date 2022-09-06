@@ -58,6 +58,11 @@ header {
   padding: 1rem 2.5rem;
 }
 
+.slide button:hover {
+   background-color: var(--primary-350);
+   cursor: pointer;
+}
+
 header .slick-slider {
   overflow: hidden !important;
   position: relative !important;
