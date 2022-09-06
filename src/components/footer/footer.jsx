@@ -16,7 +16,6 @@ function Footer() {
       <div className="right">
         <div className="top">
             <ul>
-                <hr />
                 <h3>Useful Link</h3>
                 <li><a>Home</a></li>
                 <li><a>Services</a></li>
@@ -31,7 +30,7 @@ function Footer() {
             </ul>
 
             <ul>
-                <hr />
+
                 <h3>Site Map</h3>
                 <li><a>Home</a></li>
                 <li><a>Services</a></li>
