@@ -8,6 +8,24 @@ html {
   }
 }
 
+@media (min-width: 1400px) {
+  html {
+    font-size: 110%;
+  }
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 120%;
+  }
+}
+
+@media (min-width: 1800px) {
+  html {
+    font-size: 140%;
+  }
+}
+
 body {
   background-color: white;
 }

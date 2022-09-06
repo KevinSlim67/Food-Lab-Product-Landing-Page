@@ -36,6 +36,8 @@ function Intro() {
           </p>
         </div>
       </div>
+
+      <img className="shape" src="assets/images/shapes/1.svg" alt="" />
     </section>
   );
 }

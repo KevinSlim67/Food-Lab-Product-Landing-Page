@@ -1,6 +1,17 @@
 .intro {
     width: 100%;
     padding: 3rem 6rem;
+    position: relative;
+}
+
+.intro .shape {
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    top: -4vw;
+    right: -10vw;
+    z-index: -1;
+    rotate: -25deg;
 }
 
 .split-container {

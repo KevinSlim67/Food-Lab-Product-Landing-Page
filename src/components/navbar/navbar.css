@@ -61,6 +61,33 @@ nav li .selected::after{
   opacity: 1;
 }
 
+nav .container {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+nav button {
+  background-color: transparent;
+  border-style: none;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav button img {
+  margin: 1rem;
+  width: 2rem;
+  height: 2rem;
+  transition: transform 100ms ease;
+}
+
+nav button:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
 @media (max-width: 950px) {
     nav ul {
         display: none;
