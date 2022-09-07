@@ -6,11 +6,13 @@ import Intro from './intro/intro';
 
 function App() {
   return (
-    <div className="layout">
+    <div className="App">
       <NavBar />
-      <Header />
-      <Intro />
-      <Footer />
+      <div className="layout">
+        <Header />
+        <Intro />
+        <Footer />
+      </div>
     </div>
   );
 }

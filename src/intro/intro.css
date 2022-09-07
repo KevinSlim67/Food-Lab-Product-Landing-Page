@@ -2,16 +2,14 @@
   width: 100%;
   padding: 3rem 6rem 5rem 6rem;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: visible;
 }
 
 .intro .shape {
-  width: 15vw;
-  height: 15vw;
+  width: 20vw;
+  height: 20vw;
   position: absolute;
-  top: -4vw;
-  right: -10vw;
+  top: -5vw;
+  right: -12vw;
   z-index: -1;
   rotate: -25deg;
 }
