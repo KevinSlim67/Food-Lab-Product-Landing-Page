@@ -17,13 +17,13 @@ html {
 
 @media (max-width: 700px) {
   html {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 400px) {
   html {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -61,6 +61,7 @@ body {
 
 section {
   padding: 3rem 4rem;
+  position: relative;
 }
 
 section h2 {

@@ -1,4 +1,5 @@
 header {
+  position: relative;
   width: 100%;
   font-size: min(1rem, 1.7vw);
 }
@@ -83,8 +84,52 @@ header .slick-dots li {
     margin-right: 2rem;
 }
 
-header .slick-next {
-  overflow: hidden;
+header .slider {
+  width: 100%;
+  height: 100%;
+}
+
+header .slider-arrow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none !important;
+}
+
+header .slider-arrow button {
+  background-color: transparent;
+  width: max(2rem, 5vw);
+  height: max(2rem, 5vw);
+  border-radius: 50%;
+  border-style: none;
+  pointer-events: all;
+}
+
+header .slider-arrow button img {
+  width: max(2rem, 5vw);
+  height: max(2rem, 5vw);
+}
+
+header .slider-arrow button:hover {
+  background-color: rgba(0, 0, 0, 0.082);
+  cursor: pointer;
+}
+
+.arrow-btn {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  opacity: 50%;
+
+}
+
+header .next {
+  right: 2rem;
+}
+
+header .prev {
+  left: 2rem;
 }
 
 @media (max-width: 600px) {
