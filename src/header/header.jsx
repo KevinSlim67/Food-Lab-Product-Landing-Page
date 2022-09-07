@@ -38,7 +38,7 @@ class Header extends Component {
         {this.renderArrows()}
         <Slider {...settings} ref={c => (this.slider = c)}>
           <div className="slide">
-            <img src="/assets/images/header/image_1.png" />
+            <img src="/assets/images/header/image_1.png" alt="" />
             <div className="layer">
               <div className="container">
                 <h2>
@@ -55,7 +55,7 @@ class Header extends Component {
           </div>
 
           <div className="slide">
-            <img src="/assets/images/header/image_1.png" />
+            <img src="/assets/images/header/image_1.png" alt="" />
             <div className="layer">
               <div className="container">
                 <h2>
@@ -72,7 +72,7 @@ class Header extends Component {
           </div>
 
           <div className="slide">
-            <img src="/assets/images/header/image_1.png" />
+            <img src="/assets/images/header/image_1.png" alt="" />
             <div className="layer">
               <div className="container">
                 <h2>
@@ -89,7 +89,7 @@ class Header extends Component {
           </div>
 
           <div className="slide">
-            <img src="/assets/images/header/image_1.png" />
+            <img src="/assets/images/header/image_1.png" alt="" />
             <div className="layer">
               <div className="container">
                 <h2>
@@ -106,7 +106,7 @@ class Header extends Component {
           </div>
 
           <div className="slide">
-            <img src="/assets/images/header/image_1.png" />
+            <img src="/assets/images/header/image_1.png" alt="" />
             <div className="layer">
               <div className="container">
                 <h2>
