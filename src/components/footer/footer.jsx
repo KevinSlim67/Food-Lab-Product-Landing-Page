@@ -17,27 +17,27 @@ function Footer() {
         <div className="top">
             <ul>
                 <h3>Useful Link</h3>
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Training Registration</a></li>
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Training Registration</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
             </ul>
 
             <ul>
-                <li><a>Support</a></li>
-                <li><a>Contact Us</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Contact Us</a></li>
             </ul>
 
             <ul>
 
                 <h3>Site Map</h3>
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Training Registration</a></li>
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Training Registration</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Training Registration</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Training Registration</a></li>
             </ul>
         </div>
         <div className="bottom">

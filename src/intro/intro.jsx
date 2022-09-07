@@ -7,23 +7,34 @@ function Intro() {
       <h2>Food Lab Food Safety Services</h2>
       <div className="split-container">
         <div className="images-container">
-          <img
-            className="image-1"
-            src="assets/images/intro/image_1.png"
-            alt="woman examining food"
-          />
-          <img
-            className="image-2"
-            src="assets/images/intro/image_2.png"
-            alt="glass test tubes"
-          />
-          <img
-            className="image-3 a"
-            src="assets/images/intro/image_3.png"
-            alt="woman observing a tomato with a microscope"
-          />
+          <div className="grid-container">
+            <img
+              className="image-1"
+              src="assets/images/intro/image_1.png"
+              alt="woman examining food"
+            />
+            <img
+              className="image-2"
+              src="assets/images/intro/image_2.png"
+              alt="glass test tubes"
+            />
+            <img
+              className="image-3 a"
+              src="assets/images/intro/image_3.png"
+              alt="woman observing a tomato with a microscope"
+            />
 
-          <img className="background" src="assets/images/intro/path.png" />
+            <img
+              className="background"
+              src="assets/images/shapes/2.png"
+              alt=""
+            />
+            <img
+              className="background-shadow"
+              src="assets/images/shapes/3.png"
+              alt=""
+            />
+          </div>
         </div>
 
         <div className="text-container">

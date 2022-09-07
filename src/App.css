@@ -8,21 +8,27 @@ html {
   }
 }
 
+@media (max-width: 400px) {
+  html {
+    font-size: 0.5rem;
+  }
+}
+
 @media (min-width: 1400px) {
   html {
-    font-size: 110%;
+    font-size: 115%;
   }
 }
 
 @media (min-width: 1600px) {
   html {
-    font-size: 120%;
+    font-size: 130%;
   }
 }
 
 @media (min-width: 1800px) {
   html {
-    font-size: 140%;
+    font-size: 145%;
   }
 }
 
@@ -52,3 +58,4 @@ section h2 {
   margin-bottom: 4rem;
   font-size: 1.8rem;
 }
+

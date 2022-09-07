@@ -1,5 +1,6 @@
 header {
   width: 100%;
+  font-size: min(1rem, 1.7vw);
 }
 
 .slide {
@@ -37,25 +38,27 @@ header {
 }
 
 .slide .container h2 {
-  font-size: 3.6rem;
-  line-height: 5.3rem;
+  font-size: 3.2em;
+  line-height: min(1.8em, 10vw);
 }
 
 .slide .container p {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  font-size: 1.3em;
+  line-height: 1.8em;
   font-weight: 600;
 }
 
 .slide button {
   width: fit-content;
+  font-family: "Poppins", "sans-serif";
   background-color: var(--primary-400);
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.2em;
+  font-weight: 200;
 
   border-style: none;
   border-radius: 10px;
-  padding: 1rem 2.5rem;
+  padding: 0.7em 2.1em;
 }
 
 .slide button:hover {
@@ -83,4 +86,14 @@ header .slick-dots li {
 
 header .slick-next {
   overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  header .slick-dots li button:before {
+    display: none;
+  }
+
+  header .slide button {
+    border-radius: 5px;
+  }
 }

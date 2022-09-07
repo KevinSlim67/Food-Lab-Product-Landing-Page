@@ -27,7 +27,7 @@ nav ul {
 }
 
 nav li {
-  margin-right: 1.2rem;
+  margin-right: 1.3rem;
   position: relative;
 }
 
@@ -42,8 +42,9 @@ nav li a::after, nav li .selected::after {
     content: '';
     position: absolute;
     bottom: -4px;
-    left: 0;
-    width: 100%;
+    left: -5px;
+    width: calc(100% + 10px);
+
     height: 0.1em;
     background-color: var(--primary-700);
     opacity: 0;
