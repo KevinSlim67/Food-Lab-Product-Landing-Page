@@ -2,17 +2,42 @@ import React, { useRef, useState } from "react";
 import "./testimonials.css";
 
 function Testimonials() {
-  const [scrollPos, setScrollPos] = useState(0);
-  const [clickedOnce, setClickedOnce] = useState(false);
-  const ref = useRef(null);
+  const buttonHeld = useRef(false);
+  const sliderDiv = useRef(null);
+  const [leftVisible, setLeftVisible] = useState("none");
+  const [rightVisible, setRightVisible] = useState("block");
+
+  const leftStyle = { display: leftVisible };
+  const rightStyle = { display: rightVisible };
 
   const scroll = (scrollOffset) => {
-    ref.current.scrollLeft += scrollOffset;
-    setScrollPos(ref.current.scrollLeft);
-    setClickedOnce(true); //helps us render the right button by letting us generate it if no button has been clicked yet
+    sliderDiv.current.scrollLeft += scrollOffset;
+
+    //if scrollbar is at 0, hide the left button, otherwise, display it
+    if (sliderDiv.current.scrollLeft !== 0) setLeftVisible("block");
+    else {
+      setLeftVisible("none");
+      stopScroll();
+    }
+
+    //if scrollbar is at its max value, hide the right button, otherwise, display it
+    if (sliderDiv.current.scrollLeft !== sliderDiv.current.scrollLeftMax)
+      setRightVisible("block");
+    else {
+      setRightVisible("none");
+      stopScroll();
+    }
+
+    if (buttonHeld.current) {
+      setTimeout(() => scroll(scrollOffset), 30);
+    }
   };
 
-  let card = (
+  const stopScroll = () => {
+    buttonHeld.current = false;
+  };
+
+  const card = (
     <div className="card">
       <div className="top">
         <div className="img-container">
@@ -37,7 +62,7 @@ function Testimonials() {
   return (
     <section className="testimonials">
       <h2>Testimonials</h2>
-      <div className="slider" ref={ref}>
+      <div className="slider" ref={sliderDiv}>
         {card}
         {card}
         {card}
@@ -45,17 +70,29 @@ function Testimonials() {
 
         <div className="fade"></div>
 
-        {scrollPos !== 0 && (
-          <button className="left" onClick={() => scroll(-100)}>
-            <img src="assets/images/icons/arrow_left_2.png" alt="" />
-          </button>
-        )}
+        <button
+          className="left"
+          style={leftStyle}
+          onMouseDown={() => {
+            buttonHeld.current = true;
+            scroll(-20);
+          }}
+          onMouseUp={stopScroll}
+        >
+          <img src="assets/images/icons/arrow_left_2.png" alt="" />
+        </button>
 
-        {(!clickedOnce || scrollPos !== ref.current.scrollLeftMax) && (
-          <button className="right" onClick={() => scroll(100)}>
-            <img src="assets/images/icons/arrow_right_2.png" alt="" />
-          </button>
-        )}
+        <button
+          className="right"
+          style={rightStyle}
+          onMouseDown={() => {
+            buttonHeld.current = true;
+            scroll(20);
+          }}
+          onMouseUp={stopScroll}
+        >
+          <img src="assets/images/icons/arrow_right_2.png" alt="" />
+        </button>
       </div>
     </section>
   );
