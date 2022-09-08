@@ -78,6 +78,7 @@ function Testimonials() {
             scroll(-20);
           }}
           onMouseUp={stopScroll}
+          onMouseLeave={stopScroll}
         >
           <img src="assets/images/icons/arrow_left_2.png" alt="" />
         </button>
@@ -90,6 +91,7 @@ function Testimonials() {
             scroll(20);
           }}
           onMouseUp={stopScroll}
+          onMouseLeave={stopScroll}
         >
           <img src="assets/images/icons/arrow_right_2.png" alt="" />
         </button>
