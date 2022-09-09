@@ -13,6 +13,8 @@ function Testimonials() {
   const scroll = (scrollOffset) => {
     sliderDiv.current.scrollLeft += scrollOffset;
 
+    const maxScrollLeft = sliderDiv.current.scrollWidth - sliderDiv.current.clientWidth;
+
     //if scrollbar is at 0, hide the left button, otherwise, display it
     if (sliderDiv.current.scrollLeft !== 0) setLeftVisible("block");
     else {
@@ -21,7 +23,7 @@ function Testimonials() {
     }
 
     //if scrollbar is at its max value, hide the right button, otherwise, display it
-    if (sliderDiv.current.scrollLeft !== sliderDiv.current.scrollLeftMax)
+    if (sliderDiv.current.scrollLeft < maxScrollLeft)
       setRightVisible("block");
     else {
       setRightVisible("none");
