@@ -216,6 +216,10 @@
   text-align: end;
 }
 
+.farm-to-fork .field:last-of-type {
+  margin-bottom: 0;
+}
+
 .farm-to-fork .field:last-of-type li {
   text-align: left;
 }
