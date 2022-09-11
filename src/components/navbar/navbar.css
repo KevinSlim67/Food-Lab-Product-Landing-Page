@@ -89,7 +89,6 @@ nav button:hover img {
 }
 
 @media (max-width: 1050px) {
-
     nav {
       justify-content: space-between;
     }
@@ -98,7 +97,7 @@ nav button:hover img {
         display: none;
     }
 
-    nav container {
+    nav .container {
       margin-right: 0;
     }
 }
